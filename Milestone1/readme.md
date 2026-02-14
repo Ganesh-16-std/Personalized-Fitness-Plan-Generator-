@@ -67,16 +67,3 @@ Pandas - Data handling (for future enhancements)
 
 🌐 Live Application
 Access the deployed application here: https://huggingface.co/spaces/saiganesh2004/FitPlan-AI
-
-📸 Screenshots
-Application Home Page
-https://screenshots/app_home.png
-Main interface with fitness profile form
-
-BMI Calculation Results
-https://screenshots/bmi_calculation.png
-BMI calculation with category and personalized tips
-
-Input Validation
-https://screenshots/validation.png
-Form validation showing error messages
