@@ -66,7 +66,7 @@ Streamlit - Web application framework
 Pandas - Data handling (for future enhancements)
 
 🌐 Live Application
-Access the deployed application here: FitPlan AI on Hugging Face Spaces
+Access the deployed application here: https://huggingface.co/spaces/saiganesh2004/FitPlan-AI
 
 📸 Screenshots
 Application Home Page
