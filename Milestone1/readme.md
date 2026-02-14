@@ -1,69 +1,82 @@
-🎯 Objective
-The first milestone of the FitPlan AI project focuses on building a foundational web application interface that collects user fitness details and implements accurate BMI calculation logic. This application serves as the front-end for our personalized fitness plan generator, preparing the groundwork for future AI model integration.
+FITPLAN AI – MILESTONE 1
+BMI CALCULATOR & USER INPUT INTERFACE
 
-📊 BMI Formula Explanation
-Body Mass Index (BMI) is calculated using the following formula:
+OBJECTIVE :
 
-BMI = weight (kg) / (height in meters)²
+The first milestone of the FitPlan AI project focuses on building a
+foundational web application interface that:
 
-Where:
+• Collects essential user fitness details
+• Calculates Body Mass Index (BMI) accurately
+• Classifies BMI into standard health categories
 
-Weight is measured in kilograms (kg)
+This milestone serves as the front-end foundation for future AI-based
+personalized fitness plan generation.
 
-Height is converted from centimeters to meters by dividing by 100
+
+
+BMI FORMULA & CLASSIFICATION :
+
+BMI Formula:
+BMI = weight (kg) / (height in meters)^2
+
+Height Conversion:
+height (meters) = height (cm) / 100
 
 BMI Categories:
-Underweight: BMI < 18.5
 
-Normal weight: 18.5 ≤ BMI < 25
+  BMI < 18.5              → Underweight
+  18.5 ≤ BMI < 25         → Normal Weight
+  25 ≤ BMI < 30           → Overweight
+  BMI ≥ 30                → Obese
 
-Overweight: 25 ≤ BMI < 30
 
-Obese: BMI ≥ 30
 
-🛠️ Steps Performed
-1. Form Creation
-Designed a user-friendly interface using Streamlit with custom styling
+FEATURES & IMPLEMENTATION :
 
-Created structured sections for Personal Information and Fitness Details
+USER FORM DESIGN :
 
-Implemented various input types (text, number, selectbox, multiselect, slider)
+• Clean and user-friendly interface built using Streamlit
+• Structured layout with two main sections:
+- Personal Information
+- Fitness Details
+• Input components implemented:
+- Text Input
+- Number Input
+- Selectbox (Dropdown)
+- Multiselect
+- Slider
 
-2. Input Validation
-Ensured all required fields are filled (marked with *)
+INPUT VALIDATION :
 
-Prevented zero/negative values for height and weight
+To ensure accuracy and reliability:
 
-Validated name field is not empty or whitespace
+• Mandatory fields marked with *
+• Height and weight cannot be zero or negative
+• Name field cannot be empty or whitespace
+• At least one equipment option must be selected
+• Clear and user-friendly error messages displayed
 
-Confirmed at least one equipment option is selected
+BMI CALCULATION LOGIC :
 
-Displayed user-friendly error messages
+• Converted height from centimeters to meters
+• Applied BMI formula correctly
+• Rounded BMI to two decimal places
+• Classified BMI using conditional logic
+• Displayed result with color-coded category
 
-3. BMI Calculation Logic
-Converted height from centimeters to meters (divide by 100)
+DEPLOYMENT :
 
-Implemented BMI formula: weight / (height in meters)²
+• Application deployed on Hugging Face Spaces
+• Dependencies configured in requirements.txt
+• Reproducible environment ensured
 
-Rounded BMI result to two decimal places
+TECHNOLOGIES USED :
 
-Classified BMI into standard categories using conditional logic
+Python 3.9+ → Core programming language
+Streamlit → Web application framework
+Pandas → Data handling (future enhancements)
 
-Added color-coded display for BMI categories
+LIVE APPLICATION :
 
-4. Deployment
-Deployed the application on Hugging Face Spaces
-
-Configured proper dependencies in requirements.txt
-
-Ensured reproducible environment setup
-
-💻 Technologies Used
-Python 3.9+ - Core programming language
-
-Streamlit - Web application framework
-
-Pandas - Data handling (for future enhancements)
-
-🌐 Live Application
-Access the deployed application here: https://huggingface.co/spaces/saiganesh2004/FitPlan-AI
+https://huggingface.co/spaces/saiganesh2004/FitPlan-AI
