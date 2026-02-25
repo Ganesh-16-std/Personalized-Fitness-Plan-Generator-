@@ -10,7 +10,9 @@ https://img.shields.io/badge/Mistral-7B--Instruct-purple.svg
 
 
 📋 Live Demo
+
 https://huggingface.co/spaces/saiganesh2004/FitPlan-AI-module2
+
 
 🎯 Objective of the Milestone
 The primary objective of Milestone 2 is to develop an interactive web application that generates personalized 5-day workout plans using a Large Language Model (LLM). The application takes user inputs such as age, gender, height, weight, fitness goals, available equipment, and fitness level to create customized fitness recommendations.
