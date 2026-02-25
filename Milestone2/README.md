@@ -1,4 +1,4 @@
-💪 FIT Plan AI - Milestone 2
+💪 FIT Plan AI - Milestone 2 :
 
 https://img.shields.io/badge/Python-3.9+-blue.svg
 
@@ -9,7 +9,8 @@ https://img.shields.io/badge/%F0%9F%A4%97-Hugging%2520Face-yellow.svg
 https://img.shields.io/badge/Mistral-7B--Instruct-purple.svg
 
 
-📋 Live Demo
+
+📋 Live Demo :
 
 https://huggingface.co/spaces/saiganesh2004/FitPlan-AI-module2
 
