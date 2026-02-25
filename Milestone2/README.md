@@ -15,10 +15,13 @@ https://img.shields.io/badge/Mistral-7B--Instruct-purple.svg
 https://huggingface.co/spaces/saiganesh2004/FitPlan-AI-module2
 
 
-🎯 Objective of the Milestone
+🎯 Objective of the Milestone : 
+
 The primary objective of Milestone 2 is to develop an interactive web application that generates personalized 5-day workout plans using a Large Language Model (LLM). The application takes user inputs such as age, gender, height, weight, fitness goals, available equipment, and fitness level to create customized fitness recommendations.
 
-Key Goals:
+
+Key Goals :
+
 Collect comprehensive user fitness data through an intuitive form
 
 Calculate BMI and provide health category classification
@@ -31,10 +34,13 @@ Provide downloadable workout plans and profile reports
 
 Implement a clean, user-friendly interface with tabbed navigation
 
-🤖 Model Name Used
+
+🤖 Model Name Used : 
+
 Model: mistralai/Mistral-7B-Instruct-v0.2
 
-Model Specifications:
+Model Specifications :
+
 Architecture: Mistral-7B-v0.2 (Decoder-only Transformer)
 
 Parameters: 7 billion
@@ -56,10 +62,13 @@ Available for free via Hugging Face Inference API
 
 Suitable for fitness plan generation with proper prompting
 
-📝 Prompt Design Explanation
+
+📝 Prompt Design Explanation : 
+
 The prompt engineering strategy focuses on creating structured, safe, and personalized workout plans through careful instruction design.
 
-Prompt Structure:
+Prompt Structure :
+
 text
 You are a certified professional fitness trainer. Create a comprehensive 5-day workout plan.
 
@@ -102,8 +111,11 @@ Overweight (25-29.9): Include cardio, gradual intensity
 
 Obese (≥30): Low-impact exercises, focus on mobility
 
-⚙️ Steps Performed
-1. Model Loading
+
+⚙️ Steps Performed : 
+
+1. Model Loading -
+
 python
 from huggingface_hub import InferenceClient
 
@@ -117,7 +129,9 @@ Implemented error handling and connection testing
 
 Set up environment variable for secure token management
 
-2. Prompt Creation
+
+2. Prompt Creation -
+
 Developed build_prompt() function in prompt_builder.py
 
 Integrated BMI calculation and categorization
@@ -128,7 +142,9 @@ Created goal-specific instructions for each fitness objective
 
 Formatted equipment list for natural language processing
 
-3. Inference Testing
+
+3. Inference Testing -
+
 Tested with various user profiles (different ages, goals, fitness levels)
 
 Verified token limits (2500 tokens) for complete 5-day plans
@@ -139,7 +155,8 @@ Added retry logic for incomplete responses
 
 Tested edge cases (minimum age, maximum weight, no equipment)
 
-4. Streamlit Integration
+4. Streamlit Integration -
+   
 Built multi-tab interface with Profile Setup and Workout Plan views
 
 Implemented session state management for data persistence
@@ -150,7 +167,9 @@ Added real-time BMI calculation and display
 
 Integrated API status checking in sidebar
 
-📊 Sample Generated Outputs
+
+📊 Sample Generated Outputs :
+
 Sample Profile 1: Beginner Weight Loss
 User Profile:
 
@@ -319,7 +338,9 @@ IMPORTANT NOTES FOR BEGINNERS:
 - Stay hydrated throughout workouts
 - Take rest days seriously for recovery
 - Progress gradually - increase weights/reps only when comfortable
-Sample Profile 2: Intermediate Muscle Building
+  
+Sample Profile 2 :
+Intermediate Muscle Building
 User Profile:
 
 Name: Mike
@@ -564,4 +585,5 @@ PROGRESSIVE OVERLOAD STRATEGIES:
 
 - 
 🚀 Hugging Face Space Deployment Link :
+
 https://huggingface.co/spaces/saiganesh2004/FitPlan-AI-module2
