@@ -37,30 +37,33 @@ Implement a clean, user-friendly interface with tabbed navigation
 
 🤖 Model Name Used : 
 
-Model: mistralai/Mistral-7B-Instruct-v0.2
+Model: Qwen/Qwen2.5-7B-Instruct
 
 Model Specifications :
 
-Architecture: Mistral-7B-v0.2 (Decoder-only Transformer)
+Architecture: 	Decoder-only Transformer with RoPE, SwiGLU, RMSNorm, and Attention QKV bias 
 
-Parameters: 7 billion
+Parameters: 7.61 billion 
 
-Context Length: 32,768 tokens
+Context Length: 131,072 tokens
 
 Specialization: Instruction-following and conversational tasks
 
-Fine-tuning: Instruction-tuned version for better prompt adherence
+Fine-tuning: Instruction-tuned version based on the Qwen2.5-7B base model 
 
-Why Mistral-7B?
-Excellent balance between performance and computational efficiency
+Why Qwen2.5-7B-Instruct?
 
-Strong instruction-following capabilities
+Strong Performance: Delivers significant improvements in coding and mathematics, with scores of 85+ on benchmarks like MMLU, HumanEval, and MATH .
 
-Can generate detailed, structured responses
+Advanced Instruction Following: Demonstrates enhanced resilience to diverse system prompts, making it suitable for complex role-play and chatbot implementations .
 
-Available for free via Hugging Face Inference API
+Long Context Handling: Supports a full context length of 131,072 tokens, allowing it to process and reason over very large amounts of text .
 
-Suitable for fitness plan generation with proper prompting
+Structured Output: Excels at generating structured outputs, particularly JSON, which is valuable for integrating LLMs into applications and workflows .
+
+Multilingual Support: Trained on over 29 languages, including English, Chinese, Spanish, French, German, and many others .
+
+Open-Source and Accessible: Released under the permissive Apache 2.0 license  and available for free via the Hugging Face platform, making it highly accessible for both experimentation and deployment.
 
 
 📝 Prompt Design Explanation : 
