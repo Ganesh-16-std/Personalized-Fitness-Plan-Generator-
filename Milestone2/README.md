@@ -15,9 +15,11 @@ https://img.shields.io/badge/Mistral-7B--Instruct-purple.svg
 https://huggingface.co/spaces/saiganesh2004/FitPlan-AI-module2
 
 
+
 🎯 Objective of the Milestone : 
 
 The primary objective of Milestone 2 is to develop an interactive web application that generates personalized 5-day workout plans using a Large Language Model (LLM). The application takes user inputs such as age, gender, height, weight, fitness goals, available equipment, and fitness level to create customized fitness recommendations.
+
 
 
 Key Goals :
@@ -33,6 +35,7 @@ Ensure plans are safe and appropriate for the user's fitness level
 Provide downloadable workout plans and profile reports
 
 Implement a clean, user-friendly interface with tabbed navigation
+
 
 
 🤖 Model Name Used : 
@@ -64,6 +67,7 @@ Structured Output: Excels at generating structured outputs, particularly JSON, w
 Multilingual Support: Trained on over 29 languages, including English, Chinese, Spanish, French, German, and many others .
 
 Open-Source and Accessible: Released under the permissive Apache 2.0 license  and available for free via the Hugging Face platform, making it highly accessible for both experimentation and deployment.
+
 
 
 📝 Prompt Design Explanation : 
