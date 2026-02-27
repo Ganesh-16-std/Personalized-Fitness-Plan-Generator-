@@ -3,7 +3,7 @@ import os
 
 def query_model(prompt):
     """
-    Query the Mistral-7B model with the given prompt
+    Query the Qwen2.5-7B-Instruct model with the given prompt
     """
     try:
         HF_TOKEN = os.getenv("HF_TOKEN")
@@ -13,7 +13,7 @@ def query_model(prompt):
         
         # Initialize the client
         client = InferenceClient(
-            model="mistralai/Mistral-7B-Instruct-v0.2",
+            model="Qwen/Qwen2.5-7B-Instruct",
             token=HF_TOKEN
         )
         
@@ -72,7 +72,7 @@ def test_api_connection():
             return False, "HF_TOKEN not found"
         
         client = InferenceClient(
-            model="mistralai/Mistral-7B-Instruct-v0.2",
+            model="Qwen/Qwen2.5-7B-Instruct",
             token=HF_TOKEN
         )
         
